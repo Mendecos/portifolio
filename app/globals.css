@@ -1,4 +1,29 @@
 @import "tailwindcss";
+/* === RESET GLOBAL === */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* === CLASSE PARA BLOQUEAR OVERFLOW GLOBAL === */
+.no-overflow {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Evita “sobra” de 1px por conta da barra de rolagem vertical */
+html {
+  overflow-y: scroll;
+}
+
 
 :root {
   --background: #ffffff;

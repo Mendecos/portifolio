@@ -1,0 +1,36 @@
+.principal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  /* ocupa toda a largura, sem incluir a scrollbar */
+  width: 100%;
+  min-height: 50vh;
+  padding: 40px 0;
+  background-color: rgba(63, 82, 251, 0.271);
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+
+.principal-esq, .principal-dir {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.icones {
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+}
