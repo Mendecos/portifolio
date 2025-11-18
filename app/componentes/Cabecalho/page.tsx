@@ -4,7 +4,7 @@ export default function Cabecalho() {
   return (
     <div className="cabecalho">
       <div className="cabecalho-esq">
-        <p className="titulo">G.Mendes</p>
+        <h1 className="cabecalho-titulo">G.Mendes</h1>
       </div>
 
       <div className="cabecalho-dir">

@@ -1,22 +1,28 @@
 .principal-container {
+  max-width: 1100px;      /* limita a largura */
+  margin: 60px auto;
+  padding-left: 90px;
+  background-color: rgba(63, 82, 251, 0.271);
+  border-radius: 18px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
-  /* ocupa toda a largura, sem incluir a scrollbar */
-  width: 100%;
-  min-height: 50vh;
-  padding: 40px 0;
-  background-color: rgba(63, 82, 251, 0.271);
-  overflow-x: hidden;
-  box-sizing: border-box;
 }
 
 
-.principal-esq, .principal-dir {
+
+.principal-esq {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.principal-dir {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* alinha verticalmente pela base */
 }
 
 h1 {
@@ -31,6 +37,17 @@ h2 {
 
 .icones {
   display: flex;
-  flex-direction: row;
-  padding-top: 25px;
+  gap: 20px;        /* espaço entre os ícones */
+  margin-top: 20px; /* opcional: distância do texto de cima */
 }
+
+.icones i {
+  font-size: 2.2rem;   /* tamanho dos ícones */
+  cursor: pointer;     /* mãozinha ao passar o mouse */
+  transition: 0.2s;    /* animação suave */
+}
+
+.icones i:hover {
+  transform: scale(1.2); /* efeito quando passa o mouse */
+}
+
