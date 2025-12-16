@@ -12,7 +12,7 @@ export default function Principal() {
         <div>
           <h1>Ola, me chamo</h1>
           <h1>Gabriel Mendes</h1>
-          <h2>Desenvolverdor *************</h2>
+          <h2>Desenvolverdor</h2>
         </div>
         <div className="icones">
           <a href="https://www.linkedin.com/in/gabriel-m-s" target="_blank"><i className="bi bi-linkedin"></i></a>

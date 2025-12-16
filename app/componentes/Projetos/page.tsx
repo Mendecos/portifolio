@@ -51,27 +51,7 @@ export default function Projetos() {
           <p className="projeto-link">Codigo: <a target="_blank" href="https://github.com/Mendecos/organo"><i className="bi bi-github"> </i>Github</a></p>
         </div>
       </div>
-      <div className="conteudo">
-        <div className="projeto-esq">
-          <h2 className="subtitulo">Nome do Projeto</h2>
-
-          <div className="card-img">
-            <Image
-              src="/imagens/seu-projeto.png"
-              alt="Projeto"
-              width={400}
-              height={250}
-            />
-          </div>
-        </div>
-        <div className="projeto-dir">
-          <p>
-            Aqui você descreve o projeto. Pode explicar o objetivo, tecnologias
-            utilizadas, desafios enfrentados e o resultado final. Esse texto
-            fica alinhado à direita e ocupa mais espaço visual.
-          </p>
-        </div>
-      </div>
+      
     </div>
   );
 }

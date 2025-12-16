@@ -20,7 +20,7 @@ export default function Sobre() {
         <h3>Jovem Aprediz 2016 - 2017 Supermercado Big</h3>
         <h3>The Place English School 2022 - 2023</h3>
         <h3>Tecnologo Analise e Desenvolvimento de Sistemas 2022 - 2025</h3>
-        <h3>Alura carreira de Analise de Dados - Python, Estatistica, SQL, Excel</h3>
+        <h3>Alura carreira de Analise de Dados - Python, Estatistica, SQL, Excel (Incompleto)</h3>
       </div>
     </div>
   );

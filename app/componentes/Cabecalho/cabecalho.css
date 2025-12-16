@@ -37,3 +37,18 @@
 .cabecalho-dir button:hover {
   color: #a8c7ff; /* cor de destaque ao passar o mouse */
 }
+.cabecalho-link {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.cabecalho-link:hover {
+  background-color: white;
+  color: #122b49;
+}
