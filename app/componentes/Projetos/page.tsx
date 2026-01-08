@@ -51,6 +51,29 @@ export default function Projetos() {
           <p className="projeto-link">Codigo: <a target="_blank" href="https://github.com/Mendecos/organo"><i className="bi bi-github"> </i>Github</a></p>
         </div>
       </div>
+
+      <div className="conteudo">
+        <div className="projeto-esq">
+          <h2 className="subtitulo">book_store</h2>
+          <div className="card-img">
+            <Image
+              src="/Cabecalho/booksotre_capa.png"
+              alt="Projeto"
+              width={400}
+              height={250}
+            />
+          </div>
+        </div>
+        <div className="projeto-dir">
+          <p>
+            O book_store teve como codigo base outro projeto proprio, a Indietora, mas o intuito deste é ser apenas um catalgo online contendo
+            filtro, pesquisa por nome e data de lançamento. 
+           O desenvolvimento do front-end é realizado com o framework Next.js, utilizando CSS para a estilização da interface,
+            e MySQL como sistema de gerenciamento de banco de dados.
+          </p>
+          <p className="projeto-link">Codigo: <a target="_blank" href="https://github.com/mwsecond/book_store"><i className="bi bi-github"> </i>Github</a></p>
+        </div>
+      </div>
       
     </div>
   );
