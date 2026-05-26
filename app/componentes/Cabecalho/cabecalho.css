@@ -11,6 +11,7 @@
   );
   min-height: 90px;
   color: white;
+  gap: 20px;
 }
 
 .cabecalho-titulo {
@@ -20,23 +21,13 @@
 
 .cabecalho-dir {
   display: flex;
-  flex-direction: row; /* garante que fiquem lado a lado */
+  flex-direction: row;
   align-items: center;
-  gap: 30px; /* espaço entre os itens */
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-.cabecalho-dir button {
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 1em;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.cabecalho-dir button:hover {
-  color: #a8c7ff; /* cor de destaque ao passar o mouse */
-}
 .cabecalho-link {
   padding: 8px 16px;
   border-radius: 8px;
@@ -46,9 +37,57 @@
   text-decoration: none;
   font-size: 0.95rem;
   transition: 0.2s;
+  white-space: nowrap;
 }
 
 .cabecalho-link:hover {
   background-color: white;
   color: #122b49;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 900px) {
+  .cabecalho {
+    padding: 15px 40px;
+  }
+
+  .cabecalho-titulo {
+    font-size: 1.7rem;
+  }
+
+  .cabecalho-link {
+    font-size: 0.9rem;
+    padding: 7px 12px;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+  .cabecalho {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .cabecalho-dir {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cabecalho-link {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .cabecalho-titulo {
+    font-size: 1.5rem;
+  }
 }

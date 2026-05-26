@@ -1,69 +1,129 @@
 .projetos-container {
   width: 100%;
-  padding: 60px 0;
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .titulo {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
 }
 
+/* ---------- CARD DO PROJETO ---------- */
+
 .conteudo {
-  width: 85%;
+  width: 100%;
+  max-width: 1200px;
+
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+
   gap: 60px;
   margin-bottom: 80px;
+
+  padding: 30px;
+
+  border-radius: 18px;
+  background-color: rgba(63, 82, 251, 0.08);
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
 }
+
+/* ---------- ESQUERDA ---------- */
+
 .projeto-esq {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   flex: 1;
 }
 
 .subtitulo {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.card-img img,
-.card-img Image {
+/* ---------- IMAGEM ---------- */
+
+.card-img img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+
   border-radius: 12px;
   display: block;
   background-color: black;
-  
 }
+
+/* ---------- DIREITA ---------- */
+
 .projeto-dir {
-  flex: 1.3; 
-  font-size: 1.2em;
-  line-height: 1.5;
-  margin-top: 70px;
+  flex: 1.3;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
-h3,p {
-  font-size:1em;
+
+.projeto-dir p {
+  margin-bottom: 15px;
+}
+
+/* ---------- LINKS ---------- */
+
+.links-projeto {
+  margin-top: 20px;
+}
+
+.projeto-link {
   font-weight: 700;
 }
-.projeto-link{
+
+.projeto-link a {
   color: blue;
+  text-decoration: none;
+  transition: 0.2s;
 }
-.projeto-link :hover{
+
+.projeto-link a:hover {
   color: rgb(0, 200, 255);
 }
 
-/* ----- Responsivo ----- */
+/* ---------- TABLET ---------- */
+
 @media (max-width: 900px) {
+  .conteudo {
+    gap: 40px;
+    padding: 25px;
+  }
+
+  .titulo {
+    font-size: 2.4rem;
+  }
+
+  .subtitulo {
+    font-size: 1.7rem;
+  }
+
+  .projeto-dir {
+    font-size: 1rem;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
   .conteudo {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    gap: 30px;
+    padding: 20px;
   }
 
   .projeto-esq {
@@ -72,5 +132,18 @@ h3,p {
 
   .projeto-dir {
     text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .card-img img {
+    max-width: 100%;
   }
 }
